@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″/>
+<meta name="robots" content="all">
+<meta name="author" content="MengZe">
+<title>16进制颜色显示器</title>
+<style>
+.divClass{
+width:216px;
+height:160px;
+border:2px solid black;
+text-align:center;
+}
+.href{
+width:216px;
+text-align:center;
+}
+</style>
+</head>
+
+
+
+<body>
+<div id = "divShow" class = "divClass"></div>
+<input type = "text" id = "colorInput" value = "#000000">
+<button onClick = "change()">Change</button>
+<div class = "href">
+<a href = "http://www.atool.org/colorpicker.php">在线颜色选择器</a><br>
+<a href = "http://www.atool.org/">ATOOL在线工具</a>
+</div>
+
+
+
+<script type = "text/javascript">
+function change(){
+
+var divColor = document.getElementById("colorInput").value;
+var dDiv = document.getElementById("divShow");
+
+dDiv.style.background = divColor;
+//dDiv.innerHTML = divColor;
+}
+</script>
+
+
+</body>
+</html>

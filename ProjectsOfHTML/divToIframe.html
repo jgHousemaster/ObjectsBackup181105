@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>divFrame</title>
+
+<style type="text/css">
+.titA{line-height:30px;width:100px;text-align:center;background:#990000;float:left}
+.titB{line-height:30px;width:100px;text-align:center;background:#FF99CC;float:left}
+.titC{line-height:30px;width:100px;text-align:center;background:#CCCC33;float:left}
+.titD{line-height:30px;width:100px;text-align:center;background:#CC6699;float:left}
+.conA{height:330px;width:500px;margin:0 auto;text-align:center;background:#990000;clear:both;display:block}
+.conB{height:330px;width:500px;margin:0 auto;text-align:center;background:#FF99CC;clear:both;display:none}
+.conC{height:330px;width:500px;margin:0 auto;text-align:center;background:#CCCC33;clear:both;display:none}
+.conD{height:330px;width:500px;margin:0 auto;text-align:center;background:#CC6699;clear:both;display:none}
+.changeDiv{line-height:30px;width:500px;margin:0 auto;}
+.changeDiv div{float:left;width:auto;background:#66FFCC;}
+</style>
+
+<script language="javascript">
+var w=1
+function changeDiv(t){
+var ine=document.getElementById("q"+t);
+var inee=document.getElementById("q"+w);
+if(t!=w)
+{
+ine.style.display="block";
+inee.style.display="none"
+}
+w=t
+}
+</script>
+</head>
+
+
+<body>
+<div style="line-height:30px;width:500px;margin:0 auto">
+<div class="titA" onmousedown="changeDiv(1)">title_A</div>
+<div class="titB" onmousedown="changeDiv(2)">title_B</div>
+<div class="titC" onmousedown="changeDiv(3)">title_C</div>
+<div class="titD" onmousedown="changeDiv(4)">title_D</div>
+</div>
+<div class="conA" id="q1">content_A</div>
+<div class="conB" id="q2">content_B</div>
+<div class="conC" id="q3">content_C</div>
+<div class="conD" id="q4">content_C</div>
+</body>
+</html>

@@ -1,0 +1,287 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICONSYS32           ICON                    "res\\YILogo (2).ico"
+IDI_ICONSYS16           ICON                    "res\\YILogo (1).ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 EC 2016"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDI_ICONSYS32,IDC_STATIC,11,17,20,20
+    LTEXT           "EC 1.0 版",IDC_STATIC,40,14,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2016",IDC_STATIC,40,29,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,21,50,14,WS_GROUP
+END
+
+IDD_EC_DIALOG DIALOGEX 0, 0, 321, 203
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "EC 2016"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "1",ID_NUM1,19,61,26,21
+    PUSHBUTTON      "2",ID_NUM2,55,61,26,21
+    PUSHBUTTON      "3",ID_NUM3,93,61,26,21
+    PUSHBUTTON      "4",ID_NUM4,19,93,26,21
+    PUSHBUTTON      "5",ID_NUM5,55,93,26,21
+    PUSHBUTTON      "6",ID_NUM6,93,93,26,21
+    PUSHBUTTON      "7",ID_NUM7,19,125,26,21
+    PUSHBUTTON      "8",ID_NUM8,55,125,26,21
+    PUSHBUTTON      "9",ID_NUM9,93,125,26,21
+    PUSHBUTTON      "0",ID_NUM0,55,159,26,21
+    PUSHBUTTON      ".",ID_Point,93,159,26,21
+    PUSHBUTTON      "+",ID_PLUS,131,61,26,21
+    PUSHBUTTON      "-",ID_REDUCE,131,93,26,21
+    PUSHBUTTON      "*",ID_RIDE,131,125,26,21
+    PUSHBUTTON      "/",ID_DIVIDE,131,159,26,21
+    PUSHBUTTON      "AC",ID_AC,168,61,26,21
+    PUSHBUTTON      "C",ID_C,168,93,26,21
+    PUSHBUTTON      "=",ID_RESULT,168,125,26,21
+    PUSHBUTTON      "Exit",IDCANCEL,168,159,26,22
+    PUSHBUTTON      "梦",ID_EGG,19,159,26,21
+    LTEXT           "EC 1.0 版",IDC_STATIC,238,14,39,8,SS_NOPREFIX,WS_EX_TRANSPARENT
+    LTEXT           "版权所有 (C) 2016",IDC_STATIC,227,34,72,8,0,WS_EX_TRANSPARENT
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,208,62,106,118,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    GROUPBOX        "Number",IDC_STATIC,13,48,114,139
+    EDITTEXT        IDC_EDIT_RESULT,38,29,155,14,ES_AUTOHSCROLL | NOT WS_TABSTOP,WS_EX_TRANSPARENT | WS_EX_RIGHT
+    CONTROL         "IDC_BACKGROUND",IDB_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,7,7,307,189,WS_EX_TRANSPARENT
+    LTEXT           "答案",IDC_STATIC,17,32,17,8,0,WS_EX_TRANSPARENT
+    LTEXT           "输入",IDC_STATIC,17,17,17,9,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_IN,38,15,155,14,ES_AUTOHSCROLL | NOT WS_TABSTOP,WS_EX_TRANSPARENT | WS_EX_RIGHT
+END
+
+IDD_BOXA DIALOGEX 0, 0, 193, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bingo!"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,65,51,62,20
+    CTEXT           "这只是一个无聊的彩蛋",IDC_STATIC,37,24,119,18
+END
+
+IDD_BOXB DIALOGEX 0, 0, 203, 100
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bingo!"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,67,69,68,24
+    LTEXT           "请输入你姓氏的首字母:",IDC_STATIC,41,35,84,9
+    EDITTEXT        IDC_BOXEDIT,126,33,37,13,ES_AUTOHSCROLL
+END
+
+IDD_BOXYIN DIALOGEX 0, 0, 255, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ATY"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,198,64,50,14
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,20,24,218,15
+    LTEXT           "待改进",IDC_STATIC,64,55,25,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "EC Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "EC"
+            VALUE "LegalCopyright", "版权所有 (C) 2016"
+            VALUE "OriginalFilename", "EC.EXE"
+            VALUE "ProductName", "EC 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_EC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 314
+        VERTGUIDE, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 196
+    END
+
+    IDD_BOXA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_BOXB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_BOXYIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\YILogo (1).bmp"
+IDB_BACKGROUND          BITMAP                  "res\\BackGround.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 EC(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\EC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

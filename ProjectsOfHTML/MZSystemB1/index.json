@@ -1,0 +1,48 @@
+{
+	"level": 1,
+	"experience": 2,
+	"silver": 3,
+	"gold": 4,
+	"RMB": 5,
+	"dollar": 6,
+	"pound": 7,
+	"HT": 8,
+	"silverBank": 9,
+	"goldBank": 10,
+	"RMBBank": 11,
+	"dollarBank": 12,
+	"poundBank": 13,
+	"HTBank": 14,
+	"buqianDay": 15,
+	"buqianShort": 16,
+	"buqianLong": 17,
+	"mianzeT": 18,
+	"mianzeD": 19,
+	"root": 20,
+	"PK": 21,
+	"shengxi": 22,
+	"gameTime": 23
+}
+
+
+	<script><!--save-->
+		function save(){
+			/*<?php
+				$level="<script>document.write(level);</script>";
+				$jsonget=file_get_contents("index.json");
+				$jsondata=json_decode($jsonget,true);
+				$jsondata["level"]=$level;
+				$jsonwrite=json_encode($jsondata);
+				file_put_contents("index.json",$jsonwrite);
+			?>*/
+			
+			alert("Save success!");
+		}
+	</script>
+	
+	<script><!--get-->
+		/*$.getJSON("index.json", function (data){
+			$("#level").text(data.level);
+			$("#experience").text(data.experience);
+		});*/
+	</script>

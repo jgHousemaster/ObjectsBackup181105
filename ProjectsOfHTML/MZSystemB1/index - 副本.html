@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MZSystemB1</title>
+	
+	<style type="text/css">
+	</style>
+
+</head>
+
+
+<body>
+
+	<div id="user1" style="float:left">
+		<div><!--name-->
+			用户名：MengZe
+		</div>
+
+		<div><!--level-->
+			等级：
+			<b id="level">#</b>
+			<input id="levelAdd" type="text" value="0">
+			<button onClick="levelAdd()">加减</button>
+		</div>
+
+		<div><!--experience-->
+			经验：
+			<b id="experience">#</b>
+			<input id="expAdd" type="text" value="0">
+			<button onClick="expAdd()">加减</button>
+		</div>
+
+		<div><!--money-->
+			金钱：
+			<div style="margin-left:50px"><!--sliver-->
+				银币：
+				<b id="silver">#</b>
+				<input id="silverAdd" type="text" value="0">
+				<button onClick="silverAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--gold-->
+				金币：
+				<b id="gold">#</b>
+				<input id="goldAdd" type="text" value="0">
+				<button onClick="goldAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--RMB-->
+				RMB：
+				<b id="RMB">#</b>
+				<input id="RMBAdd" type="text" value="0">
+				<button onClick="RMBAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--dollar-->
+				美元：
+				<b id="dollar">#</b>
+				<input id="dollarAdd" type="text" value="0">
+				<button onClick="dollarAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--pound-->
+				英镑：
+				<b id="pound">#</b>
+				<input id="poundAdd" type="text" value="0">
+				<button onClick="poundAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--HT-->
+				环特：
+				<b id="HT">#</b>
+				<input id="HTAdd" type="text" value="0">
+				<button onClick="HTAdd()">加减</button>
+			</div>
+		</div>
+
+		<div><!--bank-->
+			银行：
+			<b id="moneyrate">#</b>利率
+			<div style="margin-left:50px"><!--sliver-->
+				银币：
+				<b id="silverBank">#</b>
+				<input id="silverBankAdd" type="text" value="0">
+				<button onClick="silverBankAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--gold-->
+				金币：
+				<b id="goldBank">#</b>
+				<input id="goldBankAdd" type="text" value="0">
+				<button onClick="goldBankAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--RMB-->
+				RMB：
+				<b id="RMBBank">#</b>
+				<input id="RMBBankAdd" type="text" value="0">
+				<button onClick="RMBBankAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--dollar-->
+				美元：
+				<b id="dollarBank">#</b>
+				<input id="dollarBankAdd" type="text" value="0">
+				<button onClick="dollarBankAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--pound-->
+				英镑：
+				<b id="poundBank">#</b>
+				<input id="poundBankAdd" type="text" value="0">
+				<button onClick="poundBankAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--HT-->
+				环特：
+				<b id="HTBank">#</b>
+				<input id="HTBankAdd" type="text" value="0">
+				<button onClick="HTBankAdd()">加减</button>
+			</div>
+		</div>
+
+		<div><!--shop-->
+			商城：
+			<div style="margin-left:50px"><!--buqianDay-->
+				补签卡--天 20RMB：
+				<b id="buqianDay">#</b>
+				<input id="buqianDayAdd" type="text" value="0">
+				<button onClick="buqianDayAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--buqianShort-->
+				补签卡--短 60RMB：
+				<b id="buqianShort">#</b>
+				<input id="buqianShortAdd" type="text" value="0">
+				<button onClick="buqianShortAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--buqianLong-->
+				补签卡--长 100RMB：
+				<b id="buqianLong">#</b>
+				<input id="buqianLongAdd" type="text" value="0">
+				<button onClick="buqianLongAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--mianzeT-->
+				免责卡--次 20RMB：
+				<b id="mianzeT">#</b>
+				<input id="mianzeTAdd" type="text" value="0">
+				<button onClick="mianzeTAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--mianzeD-->
+				免责卡--天 100RMB：
+				<b id="mianzeD">#</b>
+				<input id="mianzeDAdd" type="text" value="0">
+				<button onClick="mianzeDAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--root-->
+				管理员权限卡 100英镑：
+				<b id="root">#</b>
+				<input id="rootAdd" type="text" value="0">
+				<button onClick="rootAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--PK-->
+				PK卡 500RMB：
+				<b id="PK">#</b>
+				<input id="PKAdd" type="text" value="0">
+				<button onClick="PKAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--shengxi-->
+				升息卡 50英镑：
+				<b id="shengxi">#</b>
+				<input id="shengxiAdd" type="text" value="0">
+				<button onClick="shengxiAdd()">加减</button>
+			</div>
+			<div style="margin-left:50px"><!--gameTime-->
+				娱乐点卡 10RMB/时：
+				<b id="gameTime">#</b>
+				<input id="gameTimeAdd" type="text" value="0">
+				<button onClick="gameTimeAdd()">加减</button>
+			</div>
+		</div>
+	</div>
+	
+	<div id="user2" style="float:right">
+		<div><!--name2-->
+			用户名：天宇羽斩
+		</div>
+
+		<div><!--level2-->
+			等级：
+			<b id="level2">#</b>
+			<input id="level2Add" type="text" value="0">
+			<button onClick="level2Add()">加减</button>
+		</div>
+
+		<div><!--money2--><!--RMB2-->
+			金钱：
+			<b id="money2">#</b>
+			RMB
+			<input id="money2Add" type="text" value="0">
+			<button onClick="money2Add()">加减</button>
+		</div>
+	
+	
+		<div style="margin-top:20%"><!--mission-->
+			任务：
+			<div style="margin-left:50px">每天3小时娱乐时间，6-8小时学习时间，至少8小时休息时间。</div>
+		</div>
+		
+		<div style="margin-top:10%"><!--collect收藏 achievement成就 title称号 <br><br><br>-->
+			<div style="float:left">
+				收藏：
+				<div id="collect" style="margin-left:50px">
+					栖水勾勒图<br>
+				</div>
+			</div>
+			<div style="float:right">
+				<div style="float:right">
+					成就：(P暂停 T停止)
+					<div id="achievement" style="margin-left:50px">
+						素描CT<br>地理BT<br>化学BT<br>生物AP<br>医学(急救)CP<br>天文C+P<br>概率论B<br>线代B+<br>高数B+<br>文学B+<br>英语B+<br>-------------------<br>信号系统BT<br>数字信号B-T<br>通信原理B-T<br>移动通信B-T<br>-------------------<br>电路BT<br>数电B+T<br>模电B-T<br>半导体BT<br>CMOS BT<br>版图BT<br>EDA C+T<br>Verilog BT<br>-------------------<br>PS B+<br>AI C<br>AE B<br>Pr C<br>CE C+<br>-------------------<br>C AP<br>Cpp B+P<br>JAVA CP<br>DOS批处理B-P<br>MFC CT<br>cocos2dx C+T<br>数据结构C+<br>-------------------<br>HTML/H5 B+<br>CSS/CSS3 B<br>JS B<br>SQL/MySQL B-<br>Json B<br>-------------------<br>
+					</div>
+				</div>
+				<div style="float:left">
+					称号：
+					<div id="title" style="margin-left:50px">
+						职业4<br>画师1<br>设计3<br>作家3<br>学习者2<br>创意1<br>音乐1<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div style="margin-top:10%"><!--导入导出-->
+			<button onClick="output()" style="margin-top:10%;">Save</button><nobr>
+			<input id="outputstr"></input><br>
+			<input id="inputstr"></input>
+			<button onClick="input()">导入</button>
+		</div>
+	
+	</div>
+
+	
+	
+	<script type="text/javascript"><!--user1-->
+		var level=0;
+		var experience=0;
+		var silver=0;
+		var gold=0;
+		var RMB=0;
+		var dollar=0;
+		var pound=0;
+		var HT=0;
+		var moneyrate=document.getElementById("moneyrate").innerHTML=1.1;
+		var silverBank=0;
+		var goldBank=0;
+		var RMBBank=0;
+		var dollarBank=0;
+		var poundBank=0;
+		var HTBank=0;
+		var buqianDay=0;
+		var buqianShort=0;
+		var buqianLong=0;
+		var mianzeT=0;
+		var mianzeD=0;
+		var root=0;
+		var PK=0;
+		var shengxi=0;
+		var gameTime=0;
+		
+		function levelAdd(){
+			var levelAdd=document.getElementById("levelAdd").value;
+			level=level+parseFloat(levelAdd);
+			document.getElementById("level").innerHTML=level;
+		}
+		function expAdd(){
+			var expAdd=document.getElementById("expAdd").value;
+			experience=experience+parseFloat(expAdd);
+			document.getElementById("experience").innerHTML=experience;
+		}
+		function silverAdd(){
+			var silverAdd=document.getElementById("silverAdd").value;
+			silver=silver+parseFloat(silverAdd);
+			document.getElementById("silver").innerHTML=silver;
+		}
+		function goldAdd(){
+			var goldAdd=document.getElementById("goldAdd").value;
+			gold=gold+parseFloat(goldAdd);
+			document.getElementById("gold").innerHTML=gold;
+		}
+		function RMBAdd(){
+			var RMBAdd=document.getElementById("RMBAdd").value;
+			RMB=RMB+parseFloat(RMBAdd);
+			document.getElementById("RMB").innerHTML=RMB;
+		}
+		function dollarAdd(){
+			var dollarAdd=document.getElementById("dollarAdd").value;
+			dollar=dollar+parseFloat(dollarAdd);
+			document.getElementById("dollar").innerHTML=dollar;
+		}
+		function poundAdd(){
+			var poundAdd=document.getElementById("poundAdd").value;
+			pound=pound+parseFloat(poundAdd);
+			document.getElementById("pound").innerHTML=pound;
+		}
+		function HTAdd(){
+			var HTAdd=document.getElementById("HTAdd").value;
+			HT=HT+parseFloat(HTAdd);
+			document.getElementById("HT").innerHTML=HT;
+		}
+		function silverBankAdd(){
+			var silverBankAdd=document.getElementById("silverBankAdd").value;
+			silverBank=silverBank+parseFloat(silverBankAdd);
+			document.getElementById("silverBank").innerHTML=silverBank;
+		}
+		function goldBankAdd(){
+			var goldBankAdd=document.getElementById("goldBankAdd").value;
+			goldBank=goldBank+parseFloat(goldBankAdd);
+			document.getElementById("goldBank").innerHTML=goldBank;
+		}
+		function RMBBankAdd(){
+			var RMBBankAdd=document.getElementById("RMBBankAdd").value;
+			RMBBank=RMBBank+parseFloat(RMBBankAdd);
+			document.getElementById("RMBBank").innerHTML=RMBBank;
+		}
+		function dollarBankAdd(){
+			var dollarBankAdd=document.getElementById("dollarBankAdd").value;
+			dollarBank=dollarBank+parseFloat(dollarBankAdd);
+			document.getElementById("dollarBank").innerHTML=dollarBank;
+		}
+		function poundBankAdd(){
+			var poundBankAdd=document.getElementById("poundBankAdd").value;
+			poundBank=poundBank+parseFloat(poundBankAdd);
+			document.getElementById("poundBank").innerHTML=poundBank;
+		}
+		function HTBankAdd(){
+			var HTBankAdd=document.getElementById("HTBankAdd").value;
+			HTBank=HTBank+parseFloat(HTBankAdd);
+			document.getElementById("HTBank").innerHTML=HTBank;
+		}
+		function buqianDayAdd(){
+			var buqianDayAdd=document.getElementById("buqianDayAdd").value;
+			buqianDay=buqianDay+parseFloat(buqianDayAdd);
+			document.getElementById("buqianDay").innerHTML=buqianDay;
+		}
+		function buqianShortAdd(){
+			var buqianShortAdd=document.getElementById("buqianShortAdd").value;
+			buqianShort=buqianShort+parseFloat(buqianShortAdd);
+			document.getElementById("buqianShort").innerHTML=buqianShort;
+		}
+		function buqianLongAdd(){
+			var buqianLongAdd=document.getElementById("buqianLongAdd").value;
+			buqianLong=buqianLong+parseFloat(buqianLongAdd);
+			document.getElementById("buqianLong").innerHTML=buqianLong;
+		}
+		function mianzeTAdd(){
+			var mianzeTAdd=document.getElementById("mianzeTAdd").value;
+			mianzeT=mianzeT+parseFloat(mianzeTAdd);
+			document.getElementById("mianzeT").innerHTML=mianzeT;
+		}
+		function mianzeDAdd(){
+			var mianzeDAdd=document.getElementById("mianzeDAdd").value;
+			mianzeD=mianzeD+parseFloat(mianzeDAdd);
+			document.getElementById("mianzeD").innerHTML=mianzeD;
+		}
+		function rootAdd(){
+			var rootAdd=document.getElementById("rootAdd").value;
+			root=root+parseFloat(rootAdd);
+			document.getElementById("root").innerHTML=root;
+		}
+		function PKAdd(){
+			var PKAdd=document.getElementById("PKAdd").value;
+			PK=PK+parseFloat(PKAdd);
+			document.getElementById("PK").innerHTML=PK;
+		}
+		function shengxiAdd(){
+			var shengxiAdd=document.getElementById("shengxiAdd").value;
+			shengxi=shengxi+parseFloat(shengxiAdd);
+			document.getElementById("shengxi").innerHTML=shengxi;
+		}
+		function gameTimeAdd(){
+			var gameTimeAdd=document.getElementById("gameTimeAdd").value;
+			gameTime=gameTime+parseFloat(gameTimeAdd);
+			document.getElementById("gameTime").innerHTML=gameTime;
+		}
+	</script>
+	
+	<script type="text/javascript"><!--user2-->	
+		var level2=0;
+		var money2=0;
+		function level2Add(){
+			var level2Add=document.getElementById("level2Add").value;
+			level2=level2+parseFloat(level2Add);
+			document.getElementById("level2").innerHTML=level2;
+		}
+		function money2Add(){
+			var money2Add=document.getElementById("money2Add").value;
+			money2=money2+parseFloat(money2Add);
+			document.getElementById("money2").innerHTML=money2;
+		}
+	</script>
+
+	
+	<script><!--output-->
+		function output(){
+			document.getElementById("outputstr").value=" #"+level+" #"+experience+" #"+silver+" #"+gold+" #"+RMB+" #"+dollar+" #"+pound+" #"+HT+" #"+silverBank+" #"+goldBank+" #"+RMBBank+" #"+dollarBank+" #"+poundBank+" #"+HTBank+" #"+buqianDay+" #"+buqianShort+" #"+buqianLong+" #"+mianzeT+" #"+mianzeD+" #"+root+" #"+PK+" #"+shengxi+" #"+gameTime+" #"+level2+" #"+money2+" #";
+		}
+	</script>
+	
+	<script><!--input-->
+		function pick(str){
+			var reg=/#([^\s]*?)\s/g, ret=[];
+			while(arr = reg.exec(str)) ret.push(arr[1]);
+			level=parseFloat(ret[0]);
+			document.getElementById("level").innerHTML=level;
+			experience=parseFloat(ret[1]);
+			document.getElementById("experience").innerHTML=experience;
+			silver=parseFloat(ret[2]);
+			document.getElementById("silver").innerHTML=silver;
+			gold=parseFloat(ret[3]);
+			document.getElementById("gold").innerHTML=gold;
+			RMB=parseFloat(ret[4]);
+			document.getElementById("RMB").innerHTML=RMB;
+			dollar=parseFloat(ret[5]);
+			document.getElementById("dollar").innerHTML=dollar;
+			pound=parseFloat(ret[6]);
+			document.getElementById("pound").innerHTML=pound;
+			HT=parseFloat(ret[7]);
+			document.getElementById("HT").innerHTML=HT;
+			silverBank=parseFloat(ret[8]);
+			document.getElementById("silverBank").innerHTML=silverBank;
+			goldBank=parseFloat(ret[9]);
+			document.getElementById("goldBank").innerHTML=goldBank;
+			RMBBank=parseFloat(ret[10]);
+			document.getElementById("RMBBank").innerHTML=RMBBank;
+			dollarBank=parseFloat(ret[11]);
+			document.getElementById("dollarBank").innerHTML=dollarBank;
+			poundBank=parseFloat(ret[12]);
+			document.getElementById("poundBank").innerHTML=poundBank;
+			HTBank=parseFloat(ret[13]);
+			document.getElementById("HTBank").innerHTML=HTBank;
+			buqianDay=parseFloat(ret[14]);
+			document.getElementById("buqianDay").innerHTML=buqianDay;
+			buqianShort=parseFloat(ret[15]);
+			document.getElementById("buqianShort").innerHTML=buqianShort;
+			buqianLong=parseFloat(ret[16]);
+			document.getElementById("buqianLong").innerHTML=buqianLong;
+			mianzeT=parseFloat(ret[17]);
+			document.getElementById("mianzeT").innerHTML=mianzeT;
+			mianzeD=parseFloat(ret[18]);
+			document.getElementById("mianzeD").innerHTML=mianzeD;
+			root=parseFloat(ret[19]);
+			document.getElementById("root").innerHTML=root;
+			PK=parseFloat(ret[20]);
+			document.getElementById("PK").innerHTML=PK;
+			shengxi=parseFloat(ret[21]);
+			document.getElementById("shengxi").innerHTML=shengxi;
+			gameTime=parseFloat(ret[22]);
+			document.getElementById("gameTime").innerHTML=gameTime;
+			level2=parseFloat(ret[23]);
+			document.getElementById("level2").innerHTML=level2;
+			money2=parseFloat(ret[24]);
+			document.getElementById("money2").innerHTML=money2;
+		}
+		function input(){
+			var input=document.getElementById("inputstr").value;
+			pick(input);
+		}
+		
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,56 @@
+Project name: Particle Burst Logo.aep
+
+Source files collected: All
+
+Collected comps:  
+	LOGO_edit
+	Emitter
+	Wipe 02
+	Wipe 03 - invert
+	Wipe 03
+	FINAL 1920x1080
+	LOGO
+	FINAL 1280x720
+	
+Number of collected files:  4
+
+Size of collected files:  15.4 MB
+
+
+Rendering plug-ins:
+	Advanced 3D
+	
+Effects used:  13
+
+Effect:  Brightness & Contrast
+	
+Effect:  Fast Blur
+	
+Effect:  Glow
+	
+Effect:  Hue/Saturation
+	
+Effect:  Invert
+	
+Effect:  Lens Flare
+	
+Effect:  Levels
+	
+Effect:  Noise
+	
+Effect:  Particular
+	
+Effect:  Roughen Edges
+	
+Effect:  Sharpen
+	
+Effect:  Slider Control
+	
+Effect:  Tint
+	
+
+Layer:  Text Layer
+	External dependencies:  
+		Font family: 'Arial', Font style: 'Bold'
+		Font family: 'Arial', Font style: 'Regular'
+
